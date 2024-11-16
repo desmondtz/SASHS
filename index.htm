@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>Home (SASHS)</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+        header {
+           position: relative;
+           background-image: url("bg.gif");
+           background-size: cover;
+           background-position: center;
+           color: rgb(249, 247, 247);
+           padding: 50px;
+           text-align: center;
+        }
+
+        header::before {
+           content: "";
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background-color: rgba(255, 255, 255, 0.2);
+           backdrop-filter: blur(0px);
+           z-index: 0;
+        }
+
+           header h1, header p, header img{
+           position: relative;
+           z-index: 1;
+       }
+
+       nav {
+            background-color: #493D26;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            position: relative;
+            font-size: 20px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropbtn {
+    background-color: #493D26;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3D3635;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+.dropdown-content a:hover {
+    background-color: #b51313;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.submenu {
+    position: relative;
+}
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%; /* Positions it to the right of the parent */
+    top: 0;
+    background-color: #3D3635;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content a {
+    color: #fcfcfc;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #b51313;
+}
+        section {
+            background-image: url(taguig.jpg);
+            padding: 100px;
+        }
+        .center-content {
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+}
+        footer {
+    margin-top: auto;
+    background-color: #617C58;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.neon-text {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 5px;
+            text-shadow: 
+                0 0 5px #00f, 
+                0 0 10px #00f, 
+                0 0 15px #00f, 
+                0 0 20px #ff00ff, 
+                0 0 30px #ff00ff, 
+                0 0 40px #ff00ff, 
+                0 0 50px #ff00ff, 
+                0 0 75px #ff00ff;
+        }
+        h1 {
+            color: #a1d4d4;
+        }
+        #borderimg {
+            border: 10px solid transparent;
+            padding: 5px;
+            border-image: url(Fallout.jpeg) 1 stretch;
+        }
+        .p { 
+        background-color: #5e4b37;
+        color: #f5f5dc;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .p2 { 
+        background-color: #593f24;
+        color: #f5f5dc;
+        padding: 1px;
+        border-radius: 1px;
+    }
+.h2 { 
+    background-color: cornsilk;
+    width: 400px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Stand Alone Senior Highschool Within Taguig Integrated School</h1>
+        <h1>(SASHS)</h1>
+        <img src="hello_world.png" width="210" height="200">
+    </header>
+    <nav>
+        <a href="index.htm">Home</a>
+        <div class="dropdown">
+            <a href="strands.html"><button class="dropbtn">Strands &dArr;</button></a>
+            <div class="dropdown-content">
+                <a href="stem.html">STEM</a>
+                <a href="gas.html">GAS</a>
+                <a href="humss.html">HUMSS</a>
+                <div class="submenu">
+                    <a href="tvl.html">TVL &dArr;</a>
+                    <div class="submenu-content">
+                        <a href="ict.html">ICT</a>
+                        <a href="eim.html">EIM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="tc.html">Staff/Teachers </a>
+        </div>
+    </div>
+        <div class="dropdown">
+        <p>More &dArr;</p>
+        <div class="dropdown-content">
+            <a href="https://sites.google.com/deped.gov.ph/standaloneshswithintis/home?authuser=0&fbclid=IwY2xjawGjAsFleHRuA2FlbQIxMAABHX1_SRCnjWYBO66iX9IffCWvd9XITeBlzd5M7wRx_GKnqHduxzbOKQNQyQ_aem_sLujZlvHI1_F1YXsjPOfgA" target="_blank">SASHS Official site</a>
+            <a href="https://www.facebook.com/profile.php?id=100057231498229" target="_blank">SASHS FB Page </a>
+            <a href="creator.html">Dev Web </a>
+        </div>
+    </nav>
+    <section>
+        <div class="center-content">
+            <h2 id="borderimg" class="h2">Stand Alone Senior High School</h2>
+        </div>
+        <p class="p" >At Stand Alone, we believe that every child deserves a learning environment
+             where they feel inspired, supported, and empowered to
+              achieve their fullest potential. Our dedicated faculty
+               provides personalized attention in small class settings,
+                fostering not only academic excellence but also creativity, 
+                resilience, and a lifelong love of learning. 
+                From our comprehensive academic programs to a wide range of 
+                extracurricular activities, we offer students a 
+                well-rounded education that prepares them for a successful
+                 future. Discover a school community that values 
+                 diversity, integrity, and growth. Join us!! At 
+                 Stand Alone Senior High School and see how we nurture leaders
+                  for tomorrow.</p>
+                  <div class="center-content">
+                    <h2 id="borderimg" class="h2">DepEd <br>Vision, Mission and Core Values</h2>
+                </div>
+                  <div class="p2"><p class="neon-text">VISION</p>
+        <center><p>We dream of Filipinos
+            who passionately love their country<br>
+            and whose values and competencies<br>
+            enable them to realize their full potential<br>
+            and contribute meaningfully to building the nation.
+            <br>
+            As a learner-centered public institution,<br>
+            the Department of Education<br>
+            continuously improves itself<br>
+            to better serve its stakeholders.</p></center>
+            <p class="neon-text">Mission</p>
+            <center><p>To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where:<br><br>
+                Students learn in a child-friendly, gender-sensitive, safe, and motivating environment.<br><br>
+                Teachers facilitate learning and constantly nurture every learner.<br><br>
+                Administrators and staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen.<br><br>
+                Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</p></center>
+            <p class="neon-text">Our Core Values</p>
+            <center><p>Maka-Diyos<br><br>
+                Maka-tao<br><br>
+                Makakalikasan<br><br>
+                Makabansa</p></center>
+                <br><br><br>
+        </div>
+                </section>
+                  <footer>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <img src="ed.png" width="100" alt="DepEd Logo">
+                        <p style="margin: 0; text-align: center; flex-grow: 1;">&copy; Kupal</p>
+                        <p style="margin: 0; text-align: right; flex-grow: 1;">
+                            CONTACT:<br>
+                            Admin office/Registrar: 8-2936490<br>
+                            Learning Information System: 0917-9792-671<br>
+                            2024-2025
+                        </p>
+                    </div>
+                </footer>
+</body>
+</html>

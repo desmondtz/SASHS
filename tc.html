@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>Staff/Teachers (SASHS)</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            background-color: #786d5f;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+           position: relative;
+           background-image: url("bg.gif");
+           background-size: cover;
+           background-position: center;
+           color: rgb(249, 247, 247);
+           padding: 50px;
+           text-align: center;
+        }
+
+        header::before {
+           content: "";
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background-color: rgba(255, 255, 255, 0.2);
+           z-index: 0;
+        }
+
+           header h1, header p, header img{
+           position: relative;
+           z-index: 1;
+       }
+        nav {
+            background-color: #493D26;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            position: relative;
+            font-size: 20px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropbtn {
+    background-color: #493D26;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3D3635;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+.dropdown-content a:hover {
+    background-color: #b51313;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.submenu {
+    position: relative;
+}
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%; /* Positions it to the right of the parent */
+    top: 0;
+    background-color: #3D3635;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content a {
+    color: #fcfcfc;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #b51313;
+}
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #617C58;
+            color: white;
+            text-align: center;
+            padding: 10px;           
+            clear: both;
+        }
+        h1 {
+            color: #a1d4d4;
+        }
+        .p { 
+        background-color: #f3f0ed;
+        color: #43432e;
+        padding: 10px;
+        border-radius: 8px;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Meet The Staff/Teachers!!</h1>
+        </header>
+    <nav>
+        <div class="dropdown">
+            <a href="index.htm">Home</a>
+        </div>
+        <div class="dropdown">
+            <a href="strands.html"><button class="dropbtn">Strands &dArr;</button></a>
+            <div class="dropdown-content">
+                <a href="stem.html">STEM</a>
+                <a href="gas.html">GAS</a>
+                <a href="humss.html">HUMSS</a>
+                <div class="submenu">
+                    <a href="tvl.html">TVL &dArr;</a>
+                    <div class="submenu-content">
+                        <a href="ict.html">ICT</a>
+                        <a href="eim.html">EIM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="dropdown">
+                <a href="tc.html">Staff/Teachers </a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <p>More &dArr;</p>
+        <div class="dropdown-content">
+            <a href="https://sites.google.com/deped.gov.ph/standaloneshswithintis/home?authuser=0&fbclid=IwY2xjawGjAsFleHRuA2FlbQIxMAABHX1_SRCnjWYBO66iX9IffCWvd9XITeBlzd5M7wRx_GKnqHduxzbOKQNQyQ_aem_sLujZlvHI1_F1YXsjPOfgA" target="_blank">SASHS Official site</a>
+            <a href="https://www.facebook.com/profile.php?id=100057231498229" target="_blank">SASHS FB Page </a>
+            <a href="creator.html">Dev Web </a>
+        </div>
+    </nav>
+    <section>
+        <center><img src="tc2.jpg" width="1445"></center>
+        <center><img src="tc1.jpg" width="1000"</center>
+        <center><img src="icon.png" width="170"></center>
+        </section>
+        <footer style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+            <img src="ed.png" width="100" alt="DepEd Logo">
+            <p style="margin: 0; text-align: center; flex-grow: 1;">&copy; Kupal</p>
+            <p style="margin: 0; text-align: right; flex-grow: 1;">CONTACT: 
+                Admin office/Registrar :  8-2936490
+                <br>
+                Learning Informaton System : 0917-9792-671
+            <br>
+            2024-2025
+        </p>
+        </footer>
+</body>
+</html>
